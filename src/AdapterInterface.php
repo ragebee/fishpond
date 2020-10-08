@@ -1,20 +1,20 @@
 <?php
 
-namespace Gamesmkt\Fishpond;
+namespace Ragebee\Fishpond;
 
-use Gamesmkt\Fishpond\Config;
-use Gamesmkt\Fishpond\GameInterface;
-use Gamesmkt\Fishpond\PlayerInterface;
-use Gamesmkt\Fishpond\RecordInterface;
-use Gamesmkt\Fishpond\TransactionInterface;
-use Gamesmkt\Fishpond\TypeInterface;
+use Ragebee\Fishpond\Config;
+use Ragebee\Fishpond\GameInterface;
+use Ragebee\Fishpond\PlayerInterface;
+use Ragebee\Fishpond\RecordInterface;
+use Ragebee\Fishpond\TransactionInterface;
+use Ragebee\Fishpond\TypeInterface;
 
 interface AdapterInterface
 {
     /**
      * 取得遊戲列表詳情
      *
-     * @param \Gamesmkt\Fishpond\TypeInterface $type
+     * @param \Ragebee\Fishpond\TypeInterface $type
      *
      * @return array|false false on failure, meta data on success
      */
@@ -25,8 +25,8 @@ interface AdapterInterface
      *
      * （通常是因為該服務有特定的帳號規則，或是想要自定義玩家帳號、暱稱。）
      *
-     * @param \Gamesmkt\Fishpond\PlayerInterface $player
-     * @param \Gamesmkt\Fishpond\Config $config
+     * @param \Ragebee\Fishpond\PlayerInterface $player
+     * @param \Ragebee\Fishpond\Config $config
      *
      * @return array|false false on failure, meta data on success
      */
@@ -35,8 +35,8 @@ interface AdapterInterface
     /**
      * 建立玩家。
      *
-     * @param \Gamesmkt\Fishpond\PlayerInterface $player
-     * @param \Gamesmkt\Fishpond\Config $config
+     * @param \Ragebee\Fishpond\PlayerInterface $player
+     * @param \Ragebee\Fishpond\Config $config
      *
      * @return array|false false on failure, meta data on success
      */
@@ -49,9 +49,9 @@ interface AdapterInterface
      * - device:
      *   (string) pc or mobile.
      *
-     * @param \Gamesmkt\Fishpond\PlayerInterface $player
-     * @param \Gamesmkt\Fishpond\GameInterface $game
-     * @param \Gamesmkt\Fishpond\Config $config
+     * @param \Ragebee\Fishpond\PlayerInterface $player
+     * @param \Ragebee\Fishpond\GameInterface $game
+     * @param \Ragebee\Fishpond\Config $config
      *
      * @return array|false false on failure, meta data on success
      */
@@ -60,9 +60,9 @@ interface AdapterInterface
     /**
      * 登出玩家。
      *
-     * @param \Gamesmkt\Fishpond\PlayerInterface $player
-     * @param \Gamesmkt\Fishpond\GameInterface $game
-     * @param \Gamesmkt\Fishpond\Config $config
+     * @param \Ragebee\Fishpond\PlayerInterface $player
+     * @param \Ragebee\Fishpond\GameInterface $game
+     * @param \Ragebee\Fishpond\Config $config
      *
      * @return bool
      */
@@ -71,8 +71,8 @@ interface AdapterInterface
     /**
      * 取得玩家餘額。
      *
-     * @param \Gamesmkt\Fishpond\PlayerInterface $player
-     * @param \Gamesmkt\Fishpond\Config $config
+     * @param \Ragebee\Fishpond\PlayerInterface $player
+     * @param \Ragebee\Fishpond\Config $config
      *
      * @return array|false false on failure, meta data on success
      */
@@ -83,8 +83,8 @@ interface AdapterInterface
      *
      * 通常是因為該服務有特定的流水號規則。
      *
-     * @param \Gamesmkt\Fishpond\TransactionInterface $player
-     * @param \Gamesmkt\Fishpond\Config $config
+     * @param \Ragebee\Fishpond\TransactionInterface $player
+     * @param \Ragebee\Fishpond\Config $config
      *
      * @return array|false false on failure, meta data on success
      */
@@ -93,10 +93,10 @@ interface AdapterInterface
     /**
      * 執行交易。
      *
-     * @param \Gamesmkt\Fishpond\TransactionInterface $player
-     * @param \Gamesmkt\Fishpond\Config $config
+     * @param \Ragebee\Fishpond\TransactionInterface $player
+     * @param \Ragebee\Fishpond\Config $config
      *
-     * @throws \Gamesmkt\Fishpond\Exception\TransferException
+     * @throws \Ragebee\Fishpond\Exception\TransferException
      *
      * @return array|false false on failure, meta data on success
      */
@@ -105,10 +105,10 @@ interface AdapterInterface
     /**
      * 查詢玩家轉帳紀錄
      *
-     * @param \Gamesmkt\Fishpond\TransactionInterface $player
-     * @param \Gamesmkt\Fishpond\Config $config
+     * @param \Ragebee\Fishpond\TransactionInterface $player
+     * @param \Ragebee\Fishpond\Config $config
      *
-     * @throws \Gamesmkt\Fishpond\Exception\GetTransferException
+     * @throws \Ragebee\Fishpond\Exception\GetTransferException
      *
      * @return array|false false on failure, meta data on success
      */
@@ -117,9 +117,9 @@ interface AdapterInterface
     /**
      * 取得詳細紀錄的網址。
      *
-     * @param \Gamesmkt\Fishpond\RecordInterface $record
-     * @param \Gamesmkt\Fishpond\GameInterface $game
-     * @param \Gamesmkt\Fishpond\Config $config
+     * @param \Ragebee\Fishpond\RecordInterface $record
+     * @param \Ragebee\Fishpond\GameInterface $game
+     * @param \Ragebee\Fishpond\Config $config
      *
      * @return array|false false on failure, meta data on success
      */

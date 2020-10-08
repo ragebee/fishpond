@@ -1,6 +1,6 @@
 <?php
 
-namespace Gamesmkt\Fishpond;
+namespace Ragebee\Fishpond;
 
 use Illuminate\Support\Str;
 use InvalidArgumentException;

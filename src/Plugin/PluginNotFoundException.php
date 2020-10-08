@@ -1,6 +1,6 @@
 <?php
 
-namespace Gamesmkt\Fishpond\Plugin;
+namespace Ragebee\Fishpond\Plugin;
 
 use LogicException;
 

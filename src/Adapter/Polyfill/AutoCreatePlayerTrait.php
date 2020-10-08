@@ -1,9 +1,9 @@
 <?php
 
-namespace Gamesmkt\Fishpond\Adapter\Polyfill;
+namespace Ragebee\Fishpond\Adapter\Polyfill;
 
-use Gamesmkt\Fishpond\Config;
-use Gamesmkt\Fishpond\PlayerInterface;
+use Ragebee\Fishpond\Config;
+use Ragebee\Fishpond\PlayerInterface;
 
 trait AutoCreatePlayerTrait
 {

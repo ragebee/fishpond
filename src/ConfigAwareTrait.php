@@ -1,9 +1,9 @@
 <?php
 
-namespace Gamesmkt\Fishpond;
+namespace Ragebee\Fishpond;
 
-use Gamesmkt\Fishpond\Config;
 use LogicException;
+use Ragebee\Fishpond\Config;
 
 /**
  * @internal

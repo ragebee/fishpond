@@ -1,8 +1,8 @@
 <?php
 
-namespace Gamesmkt\Fishpond\Adapter;
+namespace Ragebee\Fishpond\Adapter;
 
-use Gamesmkt\Fishpond\AdapterInterface;
+use Ragebee\Fishpond\AdapterInterface;
 
 abstract class AbstractAdapter implements AdapterInterface
 {

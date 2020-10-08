@@ -1,6 +1,6 @@
 <?php
 
-namespace Gamesmkt\Fishpond;
+namespace Ragebee\Fishpond;
 
 interface TransactionInterface
 {

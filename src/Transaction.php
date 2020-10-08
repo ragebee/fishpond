@@ -1,17 +1,17 @@
 <?php
 
-namespace Gamesmkt\Fishpond;
+namespace Ragebee\Fishpond;
 
-use Gamesmkt\Fishpond\PlayerInterface;
-use Gamesmkt\Fishpond\TransactionInterface;
 use InvalidArgumentException;
+use Ragebee\Fishpond\PlayerInterface;
+use Ragebee\Fishpond\TransactionInterface;
 
 class Transaction implements TransactionInterface
 {
     /** @var int */
     private $method;
 
-    /** @var \Gamesmkt\Fishpond\PlayerInterface */
+    /** @var \Ragebee\Fishpond\PlayerInterface */
     private $user;
 
     /** @var string */
@@ -25,7 +25,7 @@ class Transaction implements TransactionInterface
 
     /**
      * @param int $method Transaction method
-     * @param \Gamesmkt\Fishpond\PlayerInterface $user The user
+     * @param \Ragebee\Fishpond\PlayerInterface $user The user
      * @param string $id Code
      * @param string $amount Amount
      * @param string $status Status

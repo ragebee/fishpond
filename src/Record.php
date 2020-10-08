@@ -1,8 +1,8 @@
 <?php
 
-namespace Gamesmkt\Fishpond;
+namespace Ragebee\Fishpond;
 
-use Gamesmkt\Fishpond\RecordInterface;
+use Ragebee\Fishpond\RecordInterface;
 
 class Record implements RecordInterface
 {

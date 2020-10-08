@@ -1,24 +1,23 @@
 <?php
 
-namespace Gamesmkt\Fishpond;
+namespace Ragebee\Fishpond;
 
 use DateTime;
-use Gamesmkt\Fishpond\AdapterInterface;
-use Gamesmkt\Fishpond\Adapter\AutoCreatePlayer;
-use Gamesmkt\Fishpond\Adapter\CanFetchRecords;
-use Gamesmkt\Fishpond\Adapter\CanFetchRecordsByContext;
-use Gamesmkt\Fishpond\Config;
-use Gamesmkt\Fishpond\ConfigAwareTrait;
-use Gamesmkt\Fishpond\Exception\NotSupportingException;
-use Gamesmkt\Fishpond\FishpondInterface;
-use Gamesmkt\Fishpond\Game;
-use Gamesmkt\Fishpond\GameInterface;
-use Gamesmkt\Fishpond\PlayerInterface;
-use Gamesmkt\Fishpond\Plugin\PluggableTrait;
-use Gamesmkt\Fishpond\RecordInterface;
-use Gamesmkt\Fishpond\TransactionInterface;
-use Gamesmkt\Fishpond\Type;
-use Gamesmkt\Fishpond\TypeInterface;
+use Ragebee\Fishpond\AdapterInterface;
+use Ragebee\Fishpond\Adapter\AutoCreatePlayer;
+use Ragebee\Fishpond\Adapter\CanFetchRecords;
+use Ragebee\Fishpond\Adapter\CanFetchRecordsByContext;
+use Ragebee\Fishpond\Config;
+use Ragebee\Fishpond\ConfigAwareTrait;
+use Ragebee\Fishpond\Exception\NotSupportingException;
+use Ragebee\Fishpond\FishpondInterface;
+use Ragebee\Fishpond\GameInterface;
+use Ragebee\Fishpond\PlayerInterface;
+use Ragebee\Fishpond\Plugin\PluggableTrait;
+use Ragebee\Fishpond\RecordInterface;
+use Ragebee\Fishpond\TransactionInterface;
+use Ragebee\Fishpond\Type;
+use Ragebee\Fishpond\TypeInterface;
 
 class Fishpond implements FishpondInterface
 {
@@ -265,9 +264,9 @@ class Fishpond implements FishpondInterface
     /**
      * Assert support donate.
      *
-     * @param \Gamesmkt\Fishpond\TypeInterface $type
+     * @param \Ragebee\Fishpond\TypeInterface $type
      *
-     * @throws \Gamesmkt\Fishpond\Exception\NotSupportingException
+     * @throws \Ragebee\Fishpond\Exception\NotSupportingException
      *
      * @return void
      */

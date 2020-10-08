@@ -1,14 +1,14 @@
 <?php
 
-namespace Gamesmkt\Fishpond\Plugin;
+namespace Ragebee\Fishpond\Plugin;
 
-use Gamesmkt\Fishpond\FishpondInterface;
-use Gamesmkt\Fishpond\PluginInterface;
+use Ragebee\Fishpond\FishpondInterface;
+use Ragebee\Fishpond\PluginInterface;
 
 abstract class AbstractPlugin implements PluginInterface
 {
     /**
-     * @var \Gamesmkt\Fishpond\FishpondInterface
+     * @var \Ragebee\Fishpond\FishpondInterface
      */
     protected $fishpond;
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace Gamesmkt\Fishpond\Adapter;
+namespace Ragebee\Fishpond\Adapter;
 
-use Gamesmkt\Fishpond\AdapterInterface;
-use Gamesmkt\Fishpond\Adapter\AutoCreatePlayer;
-use Gamesmkt\Fishpond\Adapter\Polyfill\AutoCreatePlayerTrait;
+use Ragebee\Fishpond\AdapterInterface;
+use Ragebee\Fishpond\Adapter\AutoCreatePlayer;
+use Ragebee\Fishpond\Adapter\Polyfill\AutoCreatePlayerTrait;
 
 abstract class AbstractAutoCreatePlayerAdapter implements AdapterInterface, AutoCreatePlayer
 {

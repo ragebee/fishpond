@@ -1,12 +1,12 @@
 <?php
 
-namespace Gamesmkt\Fishpond\Plugin;
+namespace Ragebee\Fishpond\Plugin;
 
 use BadMethodCallException;
-use Gamesmkt\Fishpond\FishpondInterface;
-use Gamesmkt\Fishpond\PluginInterface;
-use Gamesmkt\Fishpond\Plugin\PluginNotFoundException;
 use LogicException;
+use Ragebee\Fishpond\FishpondInterface;
+use Ragebee\Fishpond\PluginInterface;
+use Ragebee\Fishpond\Plugin\PluginNotFoundException;
 
 trait PluggableTrait
 {
@@ -18,7 +18,7 @@ trait PluggableTrait
     /**
      * Register a plugin.
      *
-     * @param \Gamesmkt\Fishpond\PluginInterface $plugin
+     * @param \Ragebee\Fishpond\PluginInterface $plugin
      *
      * @throws \LogicException
      *
@@ -40,9 +40,9 @@ trait PluggableTrait
      *
      * @param string $method
      *
-     * @throws \Gamesmkt\Fishpond\Plugin\PluginNotFoundException
+     * @throws \Ragebee\Fishpond\Plugin\PluginNotFoundException
      *
-     * @return \Gamesmkt\Fishpond\PluginInterface
+     * @return \Ragebee\Fishpond\PluginInterface
      */
     protected function findPlugin($method)
     {
@@ -58,9 +58,9 @@ trait PluggableTrait
      *
      * @param string              $method
      * @param array               $arguments
-     * @param \Gamesmkt\Fishpond\FishpondInterface $fishpond
+     * @param \Ragebee\Fishpond\FishpondInterface $fishpond
      *
-     * @throws \Gamesmkt\Fishpond\Plugin\PluginNotFoundException
+     * @throws \Ragebee\Fishpond\Plugin\PluginNotFoundException
      *
      * @return mixed
      */

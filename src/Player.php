@@ -1,8 +1,8 @@
 <?php
 
-namespace Gamesmkt\Fishpond;
+namespace Ragebee\Fishpond;
 
-use Gamesmkt\Fishpond\PlayerInterface;
+use Ragebee\Fishpond\PlayerInterface;
 
 class Player implements PlayerInterface
 {

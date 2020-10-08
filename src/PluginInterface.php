@@ -1,8 +1,8 @@
 <?php
 
-namespace Gamesmkt\Fishpond;
+namespace Ragebee\Fishpond;
 
-use Gamesmkt\Fishpond\FishpondInterface;
+use Ragebee\Fishpond\FishpondInterface;
 
 interface PluginInterface
 {
@@ -16,7 +16,7 @@ interface PluginInterface
     /**
      * Set the Fishpond object.
      *
-     * @param \Gamesmkt\Fishpond\FishpondInterface $fishpond
+     * @param \Ragebee\Fishpond\FishpondInterface $fishpond
      */
     public function setFishpond(FishpondInterface $fishpond);
 }

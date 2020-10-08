@@ -1,5 +1,5 @@
 {
-    "name": "fishpond/fishpond",
+    "name": "ragebee/fishpond",
     "description": "Fishpond is a playground abstraction.",
     "require": {
         "php": "^7.3",
@@ -8,7 +8,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Fishpond\\Fishpond\\": "src"
+            "Ragebee\\Fishpond\\": "src"
         }
     },
     "extra": {

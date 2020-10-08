@@ -1,8 +1,8 @@
 <?php
 
-namespace Gamesmkt\Fishpond;
+namespace Ragebee\Fishpond;
 
-use Gamesmkt\Fishpond\Config;
+use Ragebee\Fishpond\Config;
 
 class Config
 {
@@ -12,7 +12,7 @@ class Config
     protected $settings = [];
 
     /**
-     * @var \Gamesmkt\Fishpond\Config|null
+     * @var \Ragebee\Fishpond\Config|null
      */
     protected $fallback;
 
@@ -96,7 +96,7 @@ class Config
     /**
      * Set the fallback.
      *
-     * @param \Gamesmkt\Fishpond\Config $fallback
+     * @param \Ragebee\Fishpond\Config $fallback
      *
      * @return $this
      */
