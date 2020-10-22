@@ -35,7 +35,7 @@ class Fishpond implements FishpondInterface
      * @param AdapterInterface $adapter
      * @param Config|array     $config
      */
-    public function __construct(AdapterInterface $adapter, $config = null)
+    public function __construct($adapter, $config = null)
     {
         $this->adapter = $adapter;
         $this->setConfig($config);
