@@ -87,7 +87,8 @@ class Fishpond implements FishpondInterface
         $config = $this->prepareConfig($config);
 
         if ($this->getAdapter() instanceof AutoCreatePlayer) {
-            return (bool) $object = $this->getAdapter()->getBalance($player, $config);
+            return true;
+            // return (bool) $object = $this->getAdapter()->getBalance($player, $config);
         }
 
         return (bool) $object = $this->getAdapter()->createPlayer($player, $config);
