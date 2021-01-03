@@ -18,7 +18,7 @@ class Game implements GameInterface
     /** @var array */
     private $translatedName;
 
-    public function __construct(string $name, string $code, int $typeCode, $translatedName = [])
+    public function __construct(string $name, string $code, $typeCode, $translatedName = [])
     {
         $this->name = $name;
         $this->code = $code;

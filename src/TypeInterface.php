@@ -8,14 +8,16 @@ interface TypeInterface
     const RECORD_DONATE = 2;
     const RECORD_TRANSFER = 3;
 
-    const GAME_ALL = 0; // 全部
-    const GAME_SPORT = 1; // 體育
-    const GAME_LOTTERY = 2; // 彩票
-    const GAME_CHESS_CARD = 3; // 棋牌
-    const GAME_LIVE_VIDEO = 4; // 真人
-    const GAME_SLOT = 5; // 電子
-    const GAME_FISHING = 6; // 魚機
-    const GAME_CELEBRITY = 7; // 網紅
+    const GAME_LIVE = 'LIVE';
+    const GAME_SPORT = 'SPORT';
+    const GAME_BOARD_GAME = 'BOARD_GAME';
+    const GAME_LOTTERY = 'LOTTERY';
+    const GAME_FISHING = 'FISHING';
+    const GAME_SLOT = 'SLOT';
+    const GAME_ESPORT = 'ESPORT';
+
+    const GAME_ALL = 'ALL';
+    const GAME_SPECIAL = 'SPECIAL'; // 某些遊戲會進行特殊的小遊戲，會和原本進行的遊戲不同類型，可能用不到
 
     public function getType();
 }

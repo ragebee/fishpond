@@ -7,14 +7,14 @@ use ReflectionClass;
 
 class Type implements TypeInterface
 {
-    /** @var int */
+    /** @var */
     private $type;
 
     /**
-     * @param int $type The record type
+     * @param $type The record type
      */
     public function __construct(
-        int $type
+        $type
     ) {
         $this->assertType($type);
 
@@ -28,10 +28,6 @@ class Type implements TypeInterface
 
     private function assertType($type)
     {
-        if (!is_int($type) || $type < 0) {
-            throw new InvalidArgumentException('Type must be a positive integer.');
-        }
-
         switch ($type) {
             case self::RECORD_BET:
                 break;
@@ -40,21 +36,21 @@ class Type implements TypeInterface
             case self::RECORD_TRANSFER:
                 break;
 
-            case self::GAME_ALL:
+            case self::GAME_LIVE:
                 break;
             case self::GAME_SPORT:
                 break;
+            case self::GAME_BOARD_GAME:
+                break;
             case self::GAME_LOTTERY:
-                break;
-            case self::GAME_CHESS_CARD:
-                break;
-            case self::GAME_LIVE_VIDEO:
-                break;
-            case self::GAME_SLOT:
                 break;
             case self::GAME_FISHING:
                 break;
-            case self::GAME_CELEBRITY:
+            case self::GAME_SLOT:
+                break;
+            case self::GAME_ESPORT:
+                break;
+            case self::GAME_ALL:
                 break;
             case self::GAME_SPECIAL:
                 break;
